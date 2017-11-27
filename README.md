@@ -2,7 +2,7 @@
 
 ### Usage
 
-Import files below to your project: <br/>
+Import this files to your project: <br/>
 <strong>aas/style.css</strong><br/>
 <strong>ass/script.js</strong>
 
