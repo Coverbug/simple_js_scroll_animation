@@ -1,6 +1,6 @@
 # Simple scroll animation
 
-[Demo](https://ivyman.github.io/simple_scroll_animation/example/)
+### [Demo](https://ivyman.github.io/simple_scroll_animation/example/)
 
 ### Usage
 
