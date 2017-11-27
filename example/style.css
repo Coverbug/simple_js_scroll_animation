@@ -1,0 +1,15 @@
+body[data-js="on"] {
+  overflow-x: hidden; }
+  body[data-js="on"] [data-scroll-animate="on"] {
+    transition: opacity 1s ease, transform .6s; }
+  body[data-js="on"] [data-scroll-animate-style="slide-from-left"] {
+    transform: translateX(-100%);
+    opacity: 0; }
+  body[data-js="on"] [data-scroll-animate-style="slide-from-right"] {
+    transform: translateX(100%);
+    opacity: 0; }
+  body[data-js="on"] [data-scroll-animate-style="fade-out"] {
+    opacity: 0; }
+  body[data-js="on"] [data-scroll-animate-style="drop-down"] {
+    transform: translateY(-30px);
+    opacity: 0; }

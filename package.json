@@ -1,0 +1,27 @@
+{
+  "name": "simple-scroll-animation",
+  "version": "1.0.0",
+  "description": "Scroll animation",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run sass && budo --dir ./example ./example/index.js:bundle.js  --open --live -- -t [ babelify --presets [env] ]",
+    "sass": "node-sass ./ssa/style.sass ./example/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Ivyman/simple_scroll_animation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivyman/simple_scroll_animation/issues"
+  },
+  "homepage": "https://github.com/Ivyman/simple_scroll_animation#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "budo": "^10.0.4",
+    "node-sass": "^4.7.2"
+  }
+}
