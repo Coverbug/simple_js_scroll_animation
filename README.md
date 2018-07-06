@@ -1,12 +1,10 @@
-# Simple scroll animation
-
-### [Demo](https://ivyman.github.io/simple_scroll_animation/example/)
+# Simple Scroll Animation
 
 ### Usage
 
 Import this files to your project: <br/>
-<strong>aas/style.css</strong><br/>
-<strong>ass/script.js</strong>
+<strong>./example/style.css</strong><br/>
+<strong>./example/script.js</strong>
 
 
 ### Animation variant
@@ -19,4 +17,6 @@ Add <strong>[data-scroll-animate-style="..."]</strong> attribute to your animate
 [data-scroll-animate-style="drop-down"] // for drop down
 ```
 All animated element must have <strong>[data-scroll-animate="on"]</strong> attribute. 
+
+### [Demo](https://ivyman.github.io/simple_scroll_animation/example/)
 
