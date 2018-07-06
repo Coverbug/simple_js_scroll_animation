@@ -1,12 +1,12 @@
-# Simple scroll animation
+# Simple Scroll Animation
 
 ### [Demo](https://ivyman.github.io/simple_scroll_animation/example/)
 
 ### Usage
 
 Import this files to your project: <br/>
-<strong>aas/style.css</strong><br/>
-<strong>ass/script.js</strong>
+<strong>./example/style.css</strong><br/>
+<strong>./example/script.js</strong>
 
 
 ### Animation variant
