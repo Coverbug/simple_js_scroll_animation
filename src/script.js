@@ -1,4 +1,4 @@
-class Ssa {
+class SimpleScrollAnimation {
     constructor() {
         this.win = window;
         this.doc = document;
@@ -32,7 +32,7 @@ class Ssa {
         let rect = 0;
         let pos = 0;
         let arr = [];
-        let topOffset = this.win.innerHeight - 50;
+        let topOffset = this.win.innerHeight - 100;
 
         elemsWithPos.forEach((elem) => {
             rect = elem.getBoundingClientRect();
@@ -50,5 +50,5 @@ class Ssa {
     }
 }
 
-let instance = new Ssa();
+let instance = new SimpleScrollAnimation();
 instance.init();

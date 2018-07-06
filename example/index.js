@@ -1,1 +1,1 @@
-import '../ssa/script';
+import '../src/script';
