@@ -1,7 +1,5 @@
 # Simple Scroll Animation
 
-### [Demo](https://ivyman.github.io/simple_scroll_animation/example/)
-
 ### Usage
 
 Import this files to your project: <br/>
@@ -19,4 +17,6 @@ Add <strong>[data-scroll-animate-style="..."]</strong> attribute to your animate
 [data-scroll-animate-style="drop-down"] // for drop down
 ```
 All animated element must have <strong>[data-scroll-animate="on"]</strong> attribute. 
+
+### [Demo](https://ivyman.github.io/simple_scroll_animation/example/)
 
