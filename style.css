@@ -1,0 +1,18 @@
+body[data-js="on"] {
+  overflow-x: hidden; }
+  body[data-js="on"] [data-scroll-animate="on"] {
+    transition: opacity 1s ease, transform .6s; }
+  body[data-js="on"] [data-scroll-animate-style="slide-from-left"] {
+    -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+    opacity: 0; }
+  body[data-js="on"] [data-scroll-animate-style="slide-from-right"] {
+    -ms-transform: translateX(100%);
+        transform: translateX(100%);
+    opacity: 0; }
+  body[data-js="on"] [data-scroll-animate-style="fade-out"] {
+    opacity: 0; }
+  body[data-js="on"] [data-scroll-animate-style="drop-down"] {
+    -ms-transform: translateY(-30px);
+        transform: translateY(-30px);
+    opacity: 0; }

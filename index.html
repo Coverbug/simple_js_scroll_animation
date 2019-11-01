@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple js scroll animation example</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+        }
+        .box {
+            margin: 1em 0;
+            color: #fff;
+            background-color: #fff;
+            height: 30%;
+            font-size: 2em;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            padding: .5em;
+            box-sizing: border-box;
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+        }
+        .box--small { width: calc(100%/3 - 2.5em) }
+        .box--middle { width: calc(100%/2 - 2.5em) }
+        .wrapper__item {
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 1em;
+            height: 100vh;
+            width: 100%;
+            justify-content: space-around;
+        }
+        .wrapper__item--one { background-color: #E3F2FD; }
+        .wrapper__item--two { background-color: #80DEEA; }
+        .wrapper__item--three { background-color: #E8EAF6;}
+        .wrapper__item--four { background-color: #A5D6A7; }
+        .wrapper__item--one .box { background-color: #81D4FA; }
+        .wrapper__item--two .box {
+            background-color: #E0F7FA;
+            color: #006064;
+        }
+        .wrapper__item--three .box { background-color: #3F51B5; }
+        .wrapper__item--four .box { background-color: #1B5E20; }
+
+        @media (max-width: 990px) {
+            .wrapper__item {
+                flex-direction: column;
+                height: auto;
+            }
+            .box--small,
+            .box--middle { width: 100% }
+        }
+    </style>
+    <noscript>
+
+    </noscript>
+</head>
+<body>
+     <main class="wrapper">
+         <!-- slide from left -->
+         <article class="wrapper__item wrapper__item--one">
+             <div class="box box--small"
+                  data-scroll-animate="on"
+                  data-scroll-animate-style="slide-from-left"
+                  data-scroll-animate-delay="0">
+                 Slide from &nbsp;<strong>left</strong>
+             </div>
+
+             <div class="box box--small"
+                  data-scroll-animate="on"
+                  data-scroll-animate-style="slide-from-left"
+                  data-scroll-animate-delay="100">
+                 Slide from &nbsp;<strong>left</strong>
+             </div>
+
+             <div class="box box--small"
+                  data-scroll-animate="on"
+                  data-scroll-animate-style="slide-from-left"
+                  data-scroll-animate-delay="200">
+                 Slide from &nbsp;<strong> left</strong>
+             </div>
+         </article>
+
+         <!-- slide from right -->
+         <article class="wrapper__item wrapper__item--two">
+             <div class="box box--middle"
+                  data-scroll-animate="on"
+                  data-scroll-animate-style="slide-from-left"
+                  data-scroll-animate-delay="0">
+                 Slide from &nbsp;<strong>left</strong>
+             </div>
+
+             <div class="box box--middle"
+                  data-scroll-animate="on"
+                  data-scroll-animate-style="slide-from-right"
+                  data-scroll-animate-delay="0">
+                 Slide from &nbsp;<strong>right</strong>
+             </div>
+         </article>
+
+         <!-- fade out -->
+         <article class="wrapper__item wrapper__item--three">
+             <div class="box box--middle"
+                  data-scroll-animate="on"
+                  data-scroll-animate-style="fade-out"
+                  data-scroll-animate-delay="0">
+                 Fade &nbsp;<strong>out</strong>
+             </div>
+
+             <div class="box box--middle"
+                  data-scroll-animate="on"
+                  data-scroll-animate-style="fade-out"
+                  data-scroll-animate-delay="200">
+                 Fade &nbsp;<strong>out</strong>
+             </div>
+         </article>
+
+         <!-- drop down -->
+         <article class="wrapper__item wrapper__item--four">
+             <div class="box box--middle"
+                  data-scroll-animate="on"
+                  data-scroll-animate-style="drop-down"
+                  data-scroll-animate-delay="0">
+                 Drop &nbsp;<strong>down</strong>
+             </div>
+
+             <div class="box box--middle"
+                  data-scroll-animate="on"
+                  data-scroll-animate-style="drop-down"
+                  data-scroll-animate-delay="200">
+                 Drop &nbsp;<strong>down</strong>
+             </div>
+         </article>
+     </main>
+<script src="script.js" charset="utf-8"></script>
+</body>
+</html>
