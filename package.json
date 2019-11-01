@@ -26,9 +26,9 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-minify": "^0.5.0-alpha.a24dd066",
-    "babelify": "^8.0.0",
-    "budo": "^11.3.2",
-    "node-sass": "^4.9.1"
+    "babel-preset-minify": "^0.5.1",
+    "babelify": "^10.0.0",
+    "budo": "^11.6.3",
+    "node-sass": "^4.13.0"
   }
 }
