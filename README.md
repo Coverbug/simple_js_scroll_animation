@@ -19,4 +19,4 @@ Add <strong>[data-scroll-animate-style="..."]</strong> attribute to your animate
 
 All animated element must have <strong>[data-scroll-animate="on"]</strong> attribute.
 
-### [Demo](https://ivyman.github.io/simple_scroll_animatio)
+### [Demo](https://ivyman.github.io/simple_scroll_animation/example/)
