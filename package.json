@@ -4,12 +4,12 @@
   "description": "Scroll animation",
   "homepage": "",
   "scripts": {
-    "start": "budo --dir ./example ./example/index.js:script.js  --open --live -- -t [ babelify --presets [env] ]",
+    "start": "budo --dir ./build ./build/index.js:script.js  --open --live -- -t [ babelify --presets [env] ]",
     "build": "npm run styles && npm run script",
     "styles": "npm run styles-sass && npm run styles-prefix",
-    "styles-sass": "node-sass ./src/style.sass ./example/style.css",
-    "styles-prefix": "autoprefixer-cli -b 'last 6 versions' -o ./example/style.css ./example/style.css",
-    "script": "npx babel ./src/script.js --out-file ./example/script.js --presets=env,minify",
+    "styles-sass": "node-sass ./src/style.sass ./build/style.css",
+    "styles-prefix": "autoprefixer-cli -b 'last 6 versions' -o ./build/style.css ./build/style.css",
+    "script": "npx babel ./src/script.js --out-file ./build/script.js --presets=env,minify",
     "deploy": "gh-pages -d build"
   },
   "repository": {
