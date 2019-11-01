@@ -2,14 +2,15 @@
   "name": "simple-scroll-animation",
   "version": "1.0.0",
   "description": "Scroll animation",
-  "main": "index.js",
+  "homepage": "",
   "scripts": {
     "start": "budo --dir ./example ./example/index.js:script.js  --open --live -- -t [ babelify --presets [env] ]",
     "build": "npm run styles && npm run script",
     "styles": "npm run styles-sass && npm run styles-prefix",
     "styles-sass": "node-sass ./src/style.sass ./example/style.css",
     "styles-prefix": "autoprefixer-cli -b 'last 6 versions' -o ./example/style.css ./example/style.css",
-    "script": "npx babel ./src/script.js --out-file ./example/script.js --presets=env,minify"
+    "script": "npx babel ./src/script.js --out-file ./example/script.js --presets=env,minify",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -20,15 +21,15 @@
   "bugs": {
     "url": "https://github.com/Ivyman/simple_scroll_animation/issues"
   },
-  "homepage": "https://github.com/Ivyman/simple_scroll_animation#readme",
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-minify": "^0.5.0-alpha.a24dd066",
-    "babelify": "^8.0.0",
-    "budo": "^11.3.2",
-    "node-sass": "^4.9.1"
+    "babel-preset-minify": "^0.5.1",
+    "babelify": "^10.0.0",
+    "budo": "^11.6.3",
+    "gh-pages": "^2.1.1",
+    "node-sass": "^4.13.0"
   }
 }
