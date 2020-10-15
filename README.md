@@ -3,8 +3,8 @@
 ### Usage
 
 Import this files to your project:  
-`/example/style.css</strong>`  
-`/example/script.js</strong>` 
+`/example/style.css`  
+`/example/script.js` 
 
 ### Animation variant
 
